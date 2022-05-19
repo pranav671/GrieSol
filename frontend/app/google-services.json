@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "542786337777",
+    "project_id": "griesol",
+    "storage_bucket": "griesol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542786337777:android:5103af00dec88df6b1e250",
+        "android_client_info": {
+          "package_name": "com.example.android.griesol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542786337777-ho8dv1qtcij45dpkrflst3t4g92sqrro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxGtmKKbEJGxBhj-5I3eF32o4KXPGq6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542786337777-ho8dv1qtcij45dpkrflst3t4g92sqrro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

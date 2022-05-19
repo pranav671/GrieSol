@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/searchview_background">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gsologo" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/indigo_daisy"
+            android:textColor="@color/white"
+            android:text="Complaints"
+            android:textSize="40sp" />
+    </RelativeLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="2dp"
+      android:background="#232F3E"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/searchview_background"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/gsologo" />-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:background="#232f3e" />
+
+        <Switch
+            android:id="@+id/yourComplaintSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Filter Complaints"
+            android:textColor="#d3e7f9" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:background="#232f3e" />
+
+        <TextView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logOut"
+            android:layout_gravity="center"
+            android:text="Logout"
+            android:textColor="#F1F1F1" />
+
+        <ImageView
+            android:id="@+id/logOutImage"
+            android:layout_width="30sp"
+            android:onClick="logOut"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    </LinearLayout>
+<!--            android:background="#0a4a74"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#232F3E">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/complaint_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:spanCount="2"
+            tools:listitem="@layout/comlaint_item" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Complaints Added Yet"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/complaint_loading_pb"
+                android:layout_width="30sp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="#F0864D"
+                android:visibility="gone" />
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/floatingAddComplaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                app:fab_labelStyle="@style/custom_floating_text">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goToAddComplaint"
+                    app:fab_colorNormal="#008000"
+                    app:fab_icon="@drawable/ic_baseline_edit_24"
+                    app:fab_title="Complaint" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goToMakeRequest"
+                    app:fab_colorNormal="#008000"
+                    app:fab_icon="@drawable/ic_baseline_edit_24"
+                    app:fab_title="Request" />
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

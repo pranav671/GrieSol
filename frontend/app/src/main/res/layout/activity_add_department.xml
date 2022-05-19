@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#232F3E"
+    tools:context=".AddDepartment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/searchview_background">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gsologo" />
+        <TextView
+            android:id="@+id/add_dept_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/indigo_daisy"
+            android:textColor="@color/white"
+            android:text="Add Department"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editDept"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/et_custom"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginVertical="20sp"
+            android:hint="Department Name"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:background="@drawable/et_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editVenue"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_weight="1"
+                android:hint="Venue"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/addVenue"
+                android:padding="10dp"
+                android:onClick="addVenue"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addVenue_parent_linear_layout"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:background="@drawable/et_custom"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textVenue"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:hint="Venues added appear like this"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/deleteVenueField"
+                android:onClick="onDeleteVenueField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_delete" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@drawable/et_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editAsset"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_weight="1"
+                android:hint="Asset"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/addAsset"
+                android:onClick="addAsset"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addAsset_parent_linear_layout"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:background="@drawable/et_custom"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textAsset"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:hint="Assets added appear like this"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/deleteAssetField"
+                android:onClick="onDeleteAssetField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_delete" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+<!--            <Button-->
+<!--                android:id="@+id/clear"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Clear"-->
+<!--                android:onClick="clearAll"-->
+<!--                />-->
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/uploadDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="uploadDepartment"
+                android:text="Add Department" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/add_dept_loading_pb"
+            android:visibility="gone"
+            android:indeterminateTint="#F0864D"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
