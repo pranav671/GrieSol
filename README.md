@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="gsologo.png" alt="Logo" width="140" height="80">
   </a>
 
@@ -14,7 +14,7 @@
   <p align="center">
     GrieSol is a android application which will allow students to report their complaints regarding the college assets to the officials. Use your mobile phone to report any issue you are facing in the campus and it will be directly looked by the department officials. 
     <br />
-    <a href="https://github.com/Pranit4u/GrieSol"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/pranav671/GrieSol"><strong>Explore the docs »</strong></a>
     <br />
    <br />
   </p>
@@ -86,39 +86,39 @@ You can install this application to test on your android smartphone.
 
 ## Preview
 <p align="left">
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic4.jpeg" alt="Logo" width="170" height="350">
   </a>
   &nbsp; &nbsp; &nbsp; 
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic6.jpeg" alt="Logo" width="170" height="350">
   </a>
   &nbsp; &nbsp; &nbsp; 
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic2.jpeg" alt="Logo" width="170" height="350">
   </a>
   &nbsp; &nbsp; &nbsp; 
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic8.jpeg" alt="Logo" width="170" height="350">
   </a>
   <br />
   <br />
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic3.jpeg" alt="Logo" width="170" height="350">
   </a>
   &nbsp; &nbsp; &nbsp; 
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic5.jpeg" alt="Logo" width="170" height="350">
   </a>
   &nbsp; &nbsp; &nbsp; 
-  <a href="https://github.com/Pranit4u/GrieSol">
+  <a href="https://github.com/pranav671/GrieSol">
     <img src="pic7.jpeg" alt="Logo" width="170" height="350">
   </a>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-For detail explaination about the application usage, refer to the <a href="https://github.com/Pranit4u/GrieSol/blob/main/GrieSol%20User%20Manual.pdf"><strong> USER MANUAL</strong></a>.
+For detail explaination about the application usage, refer to the <a href="https://github.com/pranav671/GrieSol/blob/main/GrieSol%20User%20Manual.pdf"><strong> USER MANUAL</strong></a>.
 
 
 
@@ -126,8 +126,11 @@ For detail explaination about the application usage, refer to the <a href="https
 ## Contact
 
 Pranit Deshmukh - pranitud@gmail.com
+<br/>
+Pranav Krishna Kadam - pranavkadam671@gmail.com
 
-Project Link: [https://github.com/Pranit4u/temp](https://github.com/Pranit4u/GrieSol)
+
+Project Link: [https://github.com/pranav671/GrieSol](https://github.com/pranav671/GrieSol)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
